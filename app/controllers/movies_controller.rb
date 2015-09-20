@@ -22,8 +22,18 @@ class MoviesController < ApplicationController
     when nil
       @movies = Movie.all
     end
+    
+    @all_ratings=Movie.all_ratings
+    @selected_ratings = params[:ratings]
+    if @selected_ratings == nil
+      @selected_ratings={}
+      @movies=Movie.all
+    else
+    @selected_keys=@selected_ratings.keys
+    @movies = Movie.where(rating: @selected_keys)
+    end
   end
-
+  
   def new
     # default: render 'new' template
   end
@@ -52,4 +62,4 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
-end
+end  
