@@ -6731,3 +6731,1638 @@ Processing by MoviesController#index as HTML
   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'PG'
   Rendered movies/index.html.haml within layouts/application (4.0ms)
 Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 12:55:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.0ms)
+
+SyntaxError (/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+..._box_tag ("ratings[#{rating}]", value="1" , checked = true, ...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting =>
+... , checked = true, options={1 , @selected_ratings.include?(r...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...ected_ratings.include?(rating), :id => 'ratings_#{rating}'})
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected '}', expecting ')'
+...g), :id => 'ratings_#{rating}'})
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n", 0, false);end;_hamlout.b...
+    ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined, expecting tSTRING_DEND
+...aml_temp);_hamlout.push_text("\n<table id='movies'>\n  <thea...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..._hamlout.push_text("\n<table id='movies'>\n  <thead>\n    <t...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...sh_text("\n<table id='movies'>\n  <thead>\n    <tr>\n      <...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...<table id='movies'>\n  <thead>\n    <tr>\n      <th#{_hamlou...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...'movies'>\n  <thead>\n    <tr>\n      <th#{_hamlout.adjust_t...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:14: syntax error, unexpected '}', expecting tSTRING_DEND
+...butes({}, nil, :class=>@title)}>#{_hamlout.adjust_tabs(1); _...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:15: unknown regexp options - th
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:15: syntax error, unexpected $undefined
+));}</th>\n      <th>Rating</th>\n      <th#{
+                                 ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+...{}, nil, :class=>@releasedate)}>#{_hamlout.adjust_tabs(1); _...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: unknown regexp options - th
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+.../th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tb...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: unknown regexp options - thad
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+...fo</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+...  </tr>\n  </thead>\n  <tbody>\n", -1, false);
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:20: syntax error, unexpected $undefined
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+                             ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:22: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</td>\n      <td>#{_hamlout.a...
+    ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:23: unknown regexp options - td
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:23: syntax error, unexpected $undefined
+));}</td>\n      <td>#{_hamlout.adjust_...
+          ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:24: syntax error, unexpected ')'
+));}</td>\n      <td>#{_hamlou...
+ ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unknown regexp options - td
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end...
+          ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unknown regexp options - tbdy
+unmatched close parenthesis: /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+..._hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unterminated regexp meets end of file
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+  app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting =>
+  app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+  app/views/movies/index.html.haml:8: syntax error, unexpected '}', expecting ')'
+  app/views/movies/index.html.haml:10: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined, expecting tSTRING_DEND
+  app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:14: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:15: unknown regexp options - th
+  app/views/movies/index.html.haml:15: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:17: unknown regexp options - th
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:17: unknown regexp options - thad
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:20: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:22: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:23: unknown regexp options - td
+  app/views/movies/index.html.haml:23: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:24: syntax error, unexpected ')'
+  app/views/movies/index.html.haml:25: unknown regexp options - td
+  app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:25: unknown regexp options - tbdy
+  app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:25: unterminated regexp meets end of file
+  app/views/movies/index.html.haml:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (147.3ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 12:55:29 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting =>
+... , checked = true, options={1 , @selected_ratings.include?(r...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...ected_ratings.include?(rating), :id => 'ratings_#{rating}'}
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected '}', expecting ')'
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n", 0, false);end;_hamlout.b...
+    ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined, expecting tSTRING_DEND
+...aml_temp);_hamlout.push_text("\n<table id='movies'>\n  <thea...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..._hamlout.push_text("\n<table id='movies'>\n  <thead>\n    <t...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...sh_text("\n<table id='movies'>\n  <thead>\n    <tr>\n      <...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...<table id='movies'>\n  <thead>\n    <tr>\n      <th#{_hamlou...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...'movies'>\n  <thead>\n    <tr>\n      <th#{_hamlout.adjust_t...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:14: syntax error, unexpected '}', expecting tSTRING_DEND
+...butes({}, nil, :class=>@title)}>#{_hamlout.adjust_tabs(1); _...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:15: unknown regexp options - th
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:15: syntax error, unexpected $undefined
+));}</th>\n      <th>Rating</th>\n      <th#{
+                                 ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+...{}, nil, :class=>@releasedate)}>#{_hamlout.adjust_tabs(1); _...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: unknown regexp options - th
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+.../th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tb...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: unknown regexp options - thad
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+...fo</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+...  </tr>\n  </thead>\n  <tbody>\n", -1, false);
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:20: syntax error, unexpected $undefined
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+                             ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:22: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</td>\n      <td>#{_hamlout.a...
+    ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:23: unknown regexp options - td
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:23: syntax error, unexpected $undefined
+));}</td>\n      <td>#{_hamlout.adjust_...
+          ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:24: syntax error, unexpected ')'
+));}</td>\n      <td>#{_hamlou...
+ ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unknown regexp options - td
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end...
+          ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unknown regexp options - tbdy
+unmatched close parenthesis: /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+..._hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unterminated regexp meets end of file
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting =>
+  app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+  app/views/movies/index.html.haml:8: syntax error, unexpected '}', expecting ')'
+  app/views/movies/index.html.haml:10: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined, expecting tSTRING_DEND
+  app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:14: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:15: unknown regexp options - th
+  app/views/movies/index.html.haml:15: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:17: unknown regexp options - th
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:17: unknown regexp options - thad
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:20: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:22: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:23: unknown regexp options - td
+  app/views/movies/index.html.haml:23: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:24: syntax error, unexpected ')'
+  app/views/movies/index.html.haml:25: unknown regexp options - td
+  app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:25: unknown regexp options - tbdy
+  app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:25: unterminated regexp meets end of file
+  app/views/movies/index.html.haml:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (136.7ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 12:56:24 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting =>
+...s[#{rating}]", '1' , true, {1 , @selected_ratings.include?(r...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...ected_ratings.include?(rating), :id => 'ratings_#{rating}'}
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected '}', expecting ')'
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n", 0, false);end;_hamlout.b...
+    ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined, expecting tSTRING_DEND
+...aml_temp);_hamlout.push_text("\n<table id='movies'>\n  <thea...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..._hamlout.push_text("\n<table id='movies'>\n  <thead>\n    <t...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...sh_text("\n<table id='movies'>\n  <thead>\n    <tr>\n      <...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...<table id='movies'>\n  <thead>\n    <tr>\n      <th#{_hamlou...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+...'movies'>\n  <thead>\n    <tr>\n      <th#{_hamlout.adjust_t...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:14: syntax error, unexpected '}', expecting tSTRING_DEND
+...butes({}, nil, :class=>@title)}>#{_hamlout.adjust_tabs(1); _...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:15: unknown regexp options - th
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:15: syntax error, unexpected $undefined
+));}</th>\n      <th>Rating</th>\n      <th#{
+                                 ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+...{}, nil, :class=>@releasedate)}>#{_hamlout.adjust_tabs(1); _...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: unknown regexp options - th
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+.../th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tb...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: unknown regexp options - thad
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+...fo</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+...  </tr>\n  </thead>\n  <tbody>\n", -1, false);
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:20: syntax error, unexpected $undefined
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+                             ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:22: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</td>\n      <td>#{_hamlout.a...
+    ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:23: unknown regexp options - td
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:23: syntax error, unexpected $undefined
+));}</td>\n      <td>#{_hamlout.adjust_...
+          ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:24: syntax error, unexpected ')'
+));}</td>\n      <td>#{_hamlou...
+ ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unknown regexp options - td
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+));}</td>\n    </tr>\n", -1, false);end...
+          ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unknown regexp options - tbdy
+unmatched close parenthesis: /tr>\n", -1, false);end;_hamlout.push_text("  </
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+..._hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_...
+...                               ^
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: unterminated regexp meets end of file
+/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting =>
+  app/views/movies/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+  app/views/movies/index.html.haml:8: syntax error, unexpected '}', expecting ')'
+  app/views/movies/index.html.haml:10: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined, expecting tSTRING_DEND
+  app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:10: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:14: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:15: unknown regexp options - th
+  app/views/movies/index.html.haml:15: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:17: unknown regexp options - th
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:17: unknown regexp options - thad
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:17: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:20: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:22: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/movies/index.html.haml:23: unknown regexp options - td
+  app/views/movies/index.html.haml:23: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:24: syntax error, unexpected ')'
+  app/views/movies/index.html.haml:25: unknown regexp options - td
+  app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:25: unknown regexp options - tbdy
+  app/views/movies/index.html.haml:25: syntax error, unexpected $undefined
+  app/views/movies/index.html.haml:25: unterminated regexp meets end of file
+  app/views/movies/index.html.haml:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (143.5ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 12:56:46 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:8: syntax error, unexpected '='
+...ings[#{rating}]", '1' , true, = submit_tag 'Refresh', :id =>...
+...                               ^):
+  app/views/movies/index.html.haml:8: syntax error, unexpected '='
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (151.9ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 12:57:12 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 322ms (Views: 320.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 12:57:54 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 13:46:46 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.4ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 117ms (Views: 92.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 13:47:16 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 13:53:05 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.6ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 98ms (Views: 75.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 13:54:28 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 181ms (Views: 177.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:17:52 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.8ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 104ms (Views: 100.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:20:54 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.8ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 160ms (Views: 130.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 14:20:55 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (1.5ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 75ms (Views: 70.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 14:20:57 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:23:57 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.8ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.7ms)
+
+NoMethodError (undefined method `keys' for ["R", "PG-13", "G", "PG"]:Array):
+  app/controllers/movies_controller.rb:31:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (137.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:24:59 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.7ms)
+
+NoMethodError (undefined method `keys' for #<Movie::ActiveRecord_Relation:0x007fa280624038>):
+  app/controllers/movies_controller.rb:31:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (142.2ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:29:21 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE 1=0
+  Rendered movies/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 158ms (Views: 87.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:29:27 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'PG'
+  Rendered movies/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:29:30 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:30:06 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE 1=0
+  Rendered movies/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:30:32 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE 1=0
+  Rendered movies/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 85ms (Views: 81.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:31:22 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.9ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:35:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (140.0ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:32:18 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:35:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (150.9ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:36:25 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:35:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (73.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (154.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:39:15 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.8ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.7ms)
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:35:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.7ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:39:35 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:35:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (135.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:39:41 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:35:in `index'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.0ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:45:39 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     6:   Include:
+     7:   - @all_ratings.each do |rating|
+     8:     = rating
+     9:     = check_box_tag "ratings[#{rating}]", 1 , @selected_ratings.include?(rating), :id => 'ratings_#{rating}'
+    10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+    11:   
+    12: %table#movies
+  app/views/movies/index.html.haml:9:in `block (2 levels) in _app_views_movies_index_html_haml__3982690893509910721_70167955805800'
+  app/views/movies/index.html.haml:7:in `each'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167955805800'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167955805800'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (145.2ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:47:02 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')[0m
+  Rendered movies/index.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=PG&commit=Refresh" for ::1 at 2015-09-20 14:47:05 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"PG"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'PG'[0m
+  Rendered movies/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=G&ratings%5BPG%5D=PG&commit=Refresh" for ::1 at 2015-09-20 14:47:10 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"G", "PG"=>"PG"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')[0m
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:47:29 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/xiaxia/Documents/tamu/csce 606/rottenpotatoes-rails-intro/app/views/movies/index.html.haml:9: syntax error, unexpected =>, expecting ')'
+...].include?(ratings) end; :id => 'ratings_#{rating}'
+...                               ^):
+  app/views/movies/index.html.haml:9: syntax error, unexpected =>, expecting ')'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (147.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:47:40 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=G&commit=Refresh" for ::1 at 2015-09-20 14:47:43 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"G"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'G'
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:49:30 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     6:   Include:
+     7:   - @all_ratings.each do |rating|
+     8:     = rating
+     9:     = check_box_tag "ratings[#{rating}]",1 ,  params[:rating].include?(rating), :id => 'ratings_#{rating}'
+    10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+    11:   
+    12: %table#movies
+  app/views/movies/index.html.haml:9:in `block (2 levels) in _app_views_movies_index_html_haml__3982690893509910721_70167959474640'
+  app/views/movies/index.html.haml:7:in `each'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167959474640'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167959474640'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (142.8ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:50:12 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     6:   Include:
+     7:   - @all_ratings.each do |rating|
+     8:     = rating
+     9:     = check_box_tag "ratings[#{rating}]",1 , @selected_ratings.include?(rating), :id => 'ratings_#{rating}'
+    10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+    11:   
+    12: %table#movies
+  app/views/movies/index.html.haml:9:in `block (2 levels) in _app_views_movies_index_html_haml__3982690893509910721_70167958561860'
+  app/views/movies/index.html.haml:7:in `each'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167958561860'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167958561860'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (129.2ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:50:55 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:50:59 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:51:09 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&ratings%5BG%5D=1&ratings%5BPG%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:51:11 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1", "G"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:51:14 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:51:16 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'R'
+  Rendered movies/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:54:08 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 68ms (Views: 56.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:54:08 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:54:15 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:55:18 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'R'
+  Rendered movies/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:55:25 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:55:26 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&ratings%5BG%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:55:33 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1", "G"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G')
+  Rendered movies/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:55:35 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:55:40 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'R'
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:56:19 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:56:19 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&ratings%5BG%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:56:23 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1", "G"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G')
+  Rendered movies/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:56:46 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 41ms (Views: 30.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for ::1 at 2015-09-20 14:56:50 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 14:56:52 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 14:56:57 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:58:36 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 14:58:37 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 14:58:38 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 14:58:41 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:01:55 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 66ms (Views: 56.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:01:56 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:02:00 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 15:02:01 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:02:04 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 15:02:42 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 15:02:43 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:02:44 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 15:04:06 -0500
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 
+    5: = form_tag movies_path, :method => :get, :id => 'ratings_form' do
+    6:   Include:
+    7:   - @all_ratings.each do |rating|
+    8:     = rating
+    9:     = check_box_tag "ratings[#{rating}]", 1 , @selected_keys.include?(rating), :id => 'ratings_#{rating}'
+   10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167972677500'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167972677500'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.0ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 15:04:29 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:04:31 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:04:35 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 15:04:40 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 15:04:45 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:04:46 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 15:04:55 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 15:04:57 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/11" for ::1 at 2015-09-20 15:05:11 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered movies/show.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 83ms (Views: 39.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 15:05:14 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 17:31:00 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 104ms (Views: 85.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&ratings%5BG%5D=1&commit=Refresh" for ::1 at 2015-09-20 17:31:06 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1", "G"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G')
+  Rendered movies/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 85ms (Views: 81.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for ::1 at 2015-09-20 17:31:09 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 77ms (Views: 74.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&commit=Refresh" for ::1 at 2015-09-20 17:31:11 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'R'
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for ::1 at 2015-09-20 17:31:13 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 17:31:15 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (17.7ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 17:31:58 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 17:31:59 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 17:33:12 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 17:42:48 -0500
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 
+    5: = form_tag movies_path, :method => :get, :id => 'ratings_form' do
+    6:   Include:
+    7:   - @all_ratings.each do |rating|
+    8:     = rating
+    9:     = check_box_tag "ratings[#{rating}]", 1 , @selected_keys.include?(rating), :id => 'ratings_#{rating}'
+   10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.1ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 17:42:49 -0500
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 
+    5: = form_tag movies_path, :method => :get, :id => 'ratings_form' do
+    6:   Include:
+    7:   - @all_ratings.each do |rating|
+    8:     = rating
+    9:     = check_box_tag "ratings[#{rating}]", 1 , @selected_keys.include?(rating), :id => 'ratings_#{rating}'
+   10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (135.4ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 17:44:03 -0500
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 
+    5: = form_tag movies_path, :method => :get, :id => 'ratings_form' do
+    6:   Include:
+    7:   - @all_ratings.each do |rating|
+    8:     = rating
+    9:     = check_box_tag "ratings[#{rating}]", 1 , @selected_keys.include?(rating), :id => 'ratings_#{rating}'
+   10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.6ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 17:46:46 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.9ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (24.5ms)
+Completed 200 OK in 205ms (Views: 166.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 17:46:50 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     6:   Include:
+     7:   - @all_ratings.each do |rating|
+     8:     = rating
+     9:     = check_box_tag "ratings[#{rating}]", 1 , @selected_keys.include?(rating), :id => 'ratings_#{rating}'
+    10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+    11:   
+    12: %table#movies
+  app/views/movies/index.html.haml:9:in `block (2 levels) in _app_views_movies_index_html_haml__3982690893509910721_70167960907120'
+  app/views/movies/index.html.haml:7:in `each'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167960907120'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167960907120'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.9ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (12.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (151.3ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 17:46:51 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT DISTINCT "movies"."rating" FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+     6:   Include:
+     7:   - @all_ratings.each do |rating|
+     8:     = rating
+     9:     = check_box_tag "ratings[#{rating}]", 1 , @selected_keys.include?(rating), :id => 'ratings_#{rating}'
+    10:   = submit_tag 'Refresh', :id => 'ratings_submit'
+    11:   
+    12: %table#movies
+  app/views/movies/index.html.haml:9:in `block (2 levels) in _app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+  app/views/movies/index.html.haml:7:in `each'
+  app/views/movies/index.html.haml:7:in `block in _app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+  app/views/movies/index.html.haml:5:in `_app_views_movies_index_html_haml__3982690893509910721_70167959263200'
+
+
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.7ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/xiaxia/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (121.2ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 17:50:01 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 68ms (Views: 59.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies" for ::1 at 2015-09-20 17:50:01 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 17:50:03 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 17:50:05 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 17:50:07 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 17:50:08 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 17:50:09 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for ::1 at 2015-09-20 17:50:15 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&commit=Refresh" for ::1 at 2015-09-20 17:50:32 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'R'
+  Rendered movies/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&commit=Refresh" for ::1 at 2015-09-20 17:50:36 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R', 'PG-13', 'G', 'PG')
+  Rendered movies/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=title" for ::1 at 2015-09-20 17:50:49 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?sort=releasedate" for ::1 at 2015-09-20 17:50:50 -0500
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"releasedate"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT DISTINCT "movies"."rating" FROM "movies"[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.5ms)
