@@ -25,25 +25,25 @@ class MoviesController < ApplicationController
     if params[:sort]==nil
         if session[:sort]!=nil
           redirect_to :ratings => params[:ratings] , :sort => session[:sort] and return
-        else
-          @movies = Movie.where(rating: @selected_keys) and return
         end
     end
     
     sort = params[:sort]
     
-      case sort
-      when 'title'
-        sort_key='title'
+    case sort
+    when 'title'
+        @movies = Movie.where(rating: @selected_keys).order('title')
         @title='hilite'
-      when 'releasedate'
-        sort_key='release_date'
-        @releasedate='hilite'       
-      end
-     @movies = Movie.where(rating: @selected_keys).order(sort_key)
+    when 'releasedate'
+        @movies = Movie.where(rating: @selected_keys).order('release_date')
+        @releasedate='hilite'
+    when nil
+        @movies = Movie.where(rating: @selected_keys)       
+    end
+     
       
-  session[:ratings]=params[:ratings]
-  session[:sort]=params[:sort]  
+    session[:ratings]=params[:ratings]
+    session[:sort]=params[:sort]  
 
     
     
